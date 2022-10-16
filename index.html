@@ -369,7 +369,8 @@
                             <div class="boxed boxed-inner">
                                 <div class="boxed">
                                     <div class="container">
-                                        <div id="1" class="intro" style="margin-left: -5rem;text-align: left; word-wrap: break-word;margin-top: -26rem;margin-bottom: auto; margin-left: -12rem;">
+                                        <div id="1" class="intro"
+                                            style="margin-left: -5rem;text-align: left; word-wrap: break-word;margin-top: -26rem;margin-bottom: auto; margin-left: -12rem;">
                                             <div>
                                                 <text
                                                     style="color: rgb(247, 242, 242);text-align: left;font-size: 2.4em;font-family: 'Microsoft YaHei';">
@@ -490,9 +491,8 @@
                 </div>
             </div>
 
-            <div data-anchor="page5" class="pp-scrollable section section-4">
+            <div data-anchor="page5" class="pp-scrollable section section-2">
                 <div class="scroll-wrap">
-                    <div class="section-bg bg-about" style="background-image:url(images/bg/about.jpg);"></div>
                     <div class="scrollable-content">
                         <div class="vertical-centred">
                             <div class="boxed boxed-inner">
@@ -500,52 +500,77 @@
                                 </div>
                                 <div class="boxed">
                                     <div class="container">
-                                        <div class="intro">
-                                            <div class="row align-items-center">
-                                                <div class="col-lg-6 offset-xl-1">
-                                                    <div class="experience-box">
-                                                        <div class="experience-content">
-                                                            <div class="experience-number">4</div>
-                                                            <div class="experience-info">
-                                                                <div>Years<br>Experience<br>Working</div>
-                                                            </div>
+                                        <div class="intro" style="margin-top: -5rem;">
+                                            <h1 class="title-uppercase mb-5 pb-5" style="font-family: STKaiti;"> <span
+                                                    style="font-family: STKaiti;" class="text-primary">霓裳银装</span>
+                                                把自然和历史穿在身上</h1>
+                                            <div class="row-specialization row">
+                                                <div class="col-specialization col-md-6 col-lg-4">
+                                                    <span>
+                                                        <div class="video-content">
+                                                            <video style="width:100%;height:auto;" poster="https://raw.githubusercontent.com/Eternal-June/image/main/image%20119%20(1).png" controls="controls">
+                                                                
+                                                                <source
+                                                                src="https://raw.githubusercontent.com/Eternal-June/image/main/video1.mp4"
+                                                                type="video/mp4">
+                                                                <div id="poster">
+                                                                    <div class="mask"></div>
+                                                                    <div class="video-img" @click="onPlay"><img
+                                                                            src="https://raw.githubusercontent.com/Eternal-June/image/main/image%20119%20(1).png" />
+                                                                    </div>
+                                                                </div>
+
+                                                            </video>
                                                         </div>
-                                                    </div>
+
+                                                        <script>
+                                                            setup() {
+                                                                function onPlay() {
+                                                                    const video = document.getElementById('video')
+                                                                    document.getElementById('poster').style.display = 'none'
+                                                                    video.controls = true   // 控件的显示
+                                                                    video.play()
+                                                                }
+                                                                onMounted(() => {
+                                                                    const video = document.getElementById('video')
+                                                                    video.controls = false  // 初始化时，控件设置为隐藏
+                                                                })
+                                                                return { onPlay }
+                                                            }
+
+                                                        </script>
+                                                    </span>
+                                                    <h4 class="text-uppercase" style="font-family: 楷体;">苗绣</h4>
+                                                    <p>据记载苗族刺绣至少应产生于战国。苗族没有自己的文字，故刺绣在某种程度上承担了重要的文化传承作用。纺织品就是苗族人的编年史，苗族刺绣图案包含诸多神秘古老的纹样，记载了苗族的历史、宗教信仰、道德伦理、社会变迁，也体现了苗族人民的世界观、价值观、审美意识，是苗族文化的重要载体。
+                                                    </p>
                                                 </div>
-                                                <div class="col-lg-5 mt-5 mt-xl-0">
-                                                    <h2 class="title-uppercase"> <span class="text-primary">the
-                                                            best</span> Websites</h2>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Accusantium dicta sit pariatur odio unde deleniti eveniet.
-                                                    <div class="progress-bars">
-                                                        <div class="clearfix">
-                                                            <div class="number float-left">Mobile Design</div>
-                                                            <div class="number float-right">80%</div>
-                                                        </div>
-                                                        <div class="progress">
-                                                            <div class="progress-bar" role="progressbar"
-                                                                style="width: 80%" aria-valuenow="0" aria-valuemin="0"
-                                                                aria-valuemax="100"></div>
-                                                        </div>
-                                                        <div class="clearfix">
-                                                            <div class="number float-left">Coding</div>
-                                                            <div class="number float-right">70%</div>
-                                                        </div>
-                                                        <div class="progress">
-                                                            <div class="progress-bar" role="progressbar"
-                                                                style="width: 70%" aria-valuenow="25" aria-valuemin="0"
-                                                                aria-valuemax="100"></div>
-                                                        </div>
-                                                        <div class="clearfix">
-                                                            <div class="number float-left">Illustration</div>
-                                                            <div class="number float-right">70%</div>
-                                                        </div>
-                                                        <div class="progress">
-                                                            <div class="progress-bar" role="progressbar"
-                                                                style="width: 70%" aria-valuenow="25" aria-valuemin="0"
-                                                                aria-valuemax="100"></div>
-                                                        </div>
-                                                    </div>
+                                                <div class="col-specialization col-md-6 col-lg-4">
+                                                    <span>
+                                                        <video style="width:100%;height:auto;"
+                                                            poster="https://raw.githubusercontent.com/Eternal-June/image/main/image%20119%20(2).png"
+                                                            controls="controls">
+                                                            <source
+                                                                src="https://raw.githubusercontent.com/Eternal-June/image/main/Miao%20Intangible%20Cultural%20Heritage%20%20%E2%80%94%E2%80%94%20%20Silversmithing%20(1).mp4"
+                                                                type="video/mp4">
+                                                        </video>
+                                                    </span>
+                                                    <h4 class="text-uppercase" style="font-family: 楷体;">银饰</h4>
+                                                    <p>千百年来，银饰始终在苗家儿女身上熠熠生辉。银饰对苗族而言，既是早年大规模迁徙历史的遗存，也是驱邪、消灾、祈福的美器。进入苗族社会的银饰决不单纯表现为某个民族专有的艺术形态，而是一个不折不扣的混合体,
+                                                        向人们呈现了一个瑰丽多彩的艺术世界，而且也展示出一个有着丰富内涵的精神世界。</p>
+                                                </div>
+                                                <div class="col-specialization col-md-6 col-lg-4">
+                                                    <span>
+                                                        <video style="width:100%;height:auto;"
+                                                            poster="https://raw.githubusercontent.com/Eternal-June/image/main/image%20119.png"
+                                                            controls="controls">
+                                                            <source
+                                                                src="https://raw.githubusercontent.com/Eternal-June/image/main/Miao%20Intangible%20Cultural%20Heritage%20%20%E2%80%94%E2%80%94%20Batik.mp4"
+                                                                type="video/mp4">
+                                                        </video>
+                                                    </span>
+                                                    <h4 class="text-uppercase" style="font-family: 楷体;">蜡染</h4>
+                                                    <p>苗族有一首关于蜡染神话的古歌，歌中说：女神娃爽为了制作撑天伞请蜂神在白布上涂蜡跳舞，然后请蓝靛神将布染成蓝底白花的蜡染布。最终，娃爽女神用蜡染布制成了撑天伞，并将这蜡染技艺传给了阿仰和阿卜两位苗族姑娘。苗族蜡染是为生产者自身需要而创造的艺术，其产品主要为生活用品。
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -556,6 +581,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div data-anchor="page6" class="pp-scrollable text-white section section-5">
                 <div class="scroll-wrap">
                     <div class="bg-changer">
@@ -896,8 +923,9 @@
                     </div>
                 </div>
             </div>
-            <div data-anchor="page10" class="pp-scrollable section section-2">
+            <div data-anchor="page10" class="pp-scrollable section section-4">
                 <div class="scroll-wrap">
+                    <div class="section-bg bg-about" style="background-image:url(images/bg/about.jpg);"></div>
                     <div class="scrollable-content">
                         <div class="vertical-centred">
                             <div class="boxed boxed-inner">
@@ -906,32 +934,51 @@
                                 <div class="boxed">
                                     <div class="container">
                                         <div class="intro">
-                                            <h2 class="title-uppercase mb-5 pb-5"> <span class="text-primary">My</span>
-                                                specialization</h2>
-                                            <div class="row-specialization row">
-                                                <div class="col-specialization col-md-6 col-lg-4">
-                                                    <span class="icon-specialization icon-laptop-phone"></span>
-                                                    <h4 class="text-uppercase">Mobile Design</h4>
-                                                    <p>Working with client and community, we deliver masterplans
-                                                        that
-                                                        create vibrant new places and spaces, attract people, and
-                                                        encourage investment through popularity and increased.</p>
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 offset-xl-1">
+                                                    <div class="experience-box">
+                                                        <div class="experience-content">
+                                                            <div class="experience-number">4</div>
+                                                            <div class="experience-info">
+                                                                <div>Years<br>Experience<br>Working</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-specialization col-md-6 col-lg-4">
-                                                    <span class="icon-specialization icon-smartphone-embed"></span>
-                                                    <h4 class="text-uppercase">Coding</h4>
-                                                    <p>Working with client and community, we deliver masterplans
-                                                        that
-                                                        create vibrant new places and spaces, attract people, and
-                                                        encourage investment through popularity and increased.</p>
-                                                </div>
-                                                <div class="col-specialization col-md-6 col-lg-4">
-                                                    <span class="icon-specialization icon-diamond2"></span>
-                                                    <h4 class="text-uppercase">Illustration</h4>
-                                                    <p>Working with client and community, we deliver masterplans
-                                                        that
-                                                        create vibrant new places and spaces, attract people, and
-                                                        encourage investment through popularity and increased.</p>
+                                                <div class="col-lg-5 mt-5 mt-xl-0">
+                                                    <h2 class="title-uppercase"> <span class="text-primary">the
+                                                            best</span> Websites</h2>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Accusantium dicta sit pariatur odio unde deleniti eveniet.
+                                                    <div class="progress-bars">
+                                                        <div class="clearfix">
+                                                            <div class="number float-left">Mobile Design</div>
+                                                            <div class="number float-right">80%</div>
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 80%" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                            <div class="number float-left">Coding</div>
+                                                            <div class="number float-right">70%</div>
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 70%" aria-valuenow="25" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                            <div class="number float-left">Illustration</div>
+                                                            <div class="number float-right">70%</div>
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 70%" aria-valuenow="25" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
