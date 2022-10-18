@@ -305,11 +305,12 @@
                                         const mapOption = {
                                             visualMap: {
                                                 left: 'right',
-                                                min: 0,
-                                                max: 9,
+                                                min: -1,
+                                                max: 16,
                                                 inRange: {
                                                     // prettier-ignore
-                                                    color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+                                                    color:  [ '#70b4eb', '#1482e5', '#1c3fbf', '#070093']
+                                                    // color: ['#AEEAF4', '#01B3D7']
                                                 },
                                                 text: ['High', 'Low'],
                                                 calculable: true,
@@ -552,7 +553,7 @@
             <div data-anchor="page4" class="pp-scrollable text-white section section-3">
                 <div class="scroll-wrap">
                     <div class="section-bg mask"
-                        style="background-image:url(https://raw.githubusercontent.com/Eternal-June/image/main/xuri.png);">
+                        style="background-image:url(https://raw.githubusercontent.com/Eternal-June/image/main/c4.png);">
                     </div>
                     <div class="scrollable-content">
                         <div class="vertical-centred">
@@ -599,30 +600,21 @@
                                                                 border-top: none;
                                                             }
                                                         </style>
-                                                        <div class="tab">
-                                                            <button class="tablinks"
-                                                                onclick="showChart(event, 'cb8ca9feaf554d23a403da0cab89c68e')"
+                                                           <div class="tab">
+                                                            <button class="tablinks" onclick="showChart(event, '651c3612e2dd44cfa6fc40482f42af4d')"
                                                                 style="color:rgb(247, 242, 242); font-size: 2rem;font-family: 楷体;">宇宙法则</button>
-                                                            <button class="tablinks"
-                                                                onclick="showChart(event, '3132f7dfaf194e7cb45b6116dca039b4')"
+                                                            <button class="tablinks" onclick="showChart(event, 'd695e51014e2425f9ea9660e29bdd3a9')"
                                                                 style="color:rgb(247, 242, 242); font-size: 2rem;font-family: 楷体;">生命认知</button>
-                                                            <button class="tablinks"
-                                                                onclick="showChart(event, '6eacfb0beb5e4306a8237ce40cfdc119')"
+                                                            <button class="tablinks" onclick="showChart(event, 'edfe815b641845b9b6d78a9464581751')"
                                                                 style="color:rgb(247, 242, 242); font-size: 2rem;font-family: 楷体;">自然万物</button>
                                                         </div>
-
-
+                                                    
                                                         <div class="box">
-                                                            <div id="cb8ca9feaf554d23a403da0cab89c68e"
-                                                                class="chart-container"
-                                                                style="width: 1000px;height: 630px;">
-
-                                                            </div>
-
+                                                            <div id="651c3612e2dd44cfa6fc40482f42af4d" class="chart-container" style="width: 1000px;height: 630px;"></div>
                                                             <script>
-                                                                var chart_cb8ca9feaf554d23a403da0cab89c68e = echarts.init(
-                                                                    document.getElementById('cb8ca9feaf554d23a403da0cab89c68e'), 'white', { renderer: 'canvas' });
-                                                                var option_cb8ca9feaf554d23a403da0cab89c68e = {
+                                                                var chart_651c3612e2dd44cfa6fc40482f42af4d = echarts.init(
+                                                                    document.getElementById('651c3612e2dd44cfa6fc40482f42af4d'), 'white', { renderer: 'canvas' });
+                                                                var option_651c3612e2dd44cfa6fc40482f42af4d = {
                                                                     "animation": true,
                                                                     "animationThreshold": 2000,
                                                                     "animationDuration": 1000,
@@ -664,21 +656,24 @@
                                                                                 {
                                                                                     "name": "\u5e7f\u897f",
                                                                                     "itemStyle": {
-                                                                                        "color": "#da0d68"
+                                                                                        "color": "#3B7E55"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u6cb3\u6c60",
                                                                                             "value": 8,
                                                                                             "itemStyle": {
-                                                                                                "color": "#e0719c"
+                                                                                                "color": "#73C088"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u5357\u4e39",
                                                                                                     "value": 7,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#f99e1c"
+                                                                                                        "color": "#A8E1B8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -687,14 +682,17 @@
                                                                                             "name": "\u767e\u8272",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#975e6d"
+                                                                                                "color": "#A8E1B8"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u9686\u6797",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#f99e1c"
+                                                                                                        "color": "#C8EAD1"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -704,70 +702,94 @@
                                                                                 {
                                                                                     "name": "\u8d35\u5dde",
                                                                                     "itemStyle": {
-                                                                                        "color": "#da1d23"
+                                                                                        "color": "#033E8A"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u51ef\u91cc",
                                                                                             "value": 58,
                                                                                             "itemStyle": {
-                                                                                                "color": "#dd4c51"
+                                                                                                "color": "#0C48A0"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u9ec4\u5e73",
                                                                                                     "value": 15,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#3e0317"
+                                                                                                        "color": "#0077B9"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u5251\u6cb3",
                                                                                                     "value": 11,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#e62969"
+                                                                                                        "color": "#0096C8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u6995\u6c5f",
                                                                                                     "value": 5,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#6569b0"
+                                                                                                        "color": "#01B3D7"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u9ece\u5e73",
                                                                                                     "value": 4,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u4e39\u5be8",
                                                                                                     "value": 3,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u6843\u6c5f",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#AEEAF4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u96f7\u5c71",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#CAF1F8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u53f0\u6c5f",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#E2F2FF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -776,35 +798,47 @@
                                                                                             "name": "\u6bd5\u8282",
                                                                                             "value": 23,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#0077B9"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u5b9a\u65b0",
                                                                                                     "value": 5,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#0096C8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u7eb3\u96cd",
                                                                                                     "value": 4,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#a5446f"
+                                                                                                        "color": "#01B3D7"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u7ec7\u91d1",
                                                                                                     "value": 4,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#aeb92c"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u5927\u65b9",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#4eb849"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -813,21 +847,27 @@
                                                                                             "name": "\u8d35\u9633",
                                                                                             "value": 14,
                                                                                             "itemStyle": {
-                                                                                                "color": "#dd4c51"
+                                                                                                "color": "#0096C8"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u82b1\u6eaa",
                                                                                                     "value": 4,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#f2684b"
+                                                                                                        "color": "#01B3D7"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u5f00\u9633",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#e73451"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -836,21 +876,27 @@
                                                                                             "name": "\u5174\u4e49",
                                                                                             "value": 10,
                                                                                             "itemStyle": {
-                                                                                                "color": "#f7a128"
+                                                                                                "color": "#01B3D7"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u671b\u8c1f",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#e2631e"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u8d1e\u4e30",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#fde404"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -859,28 +905,37 @@
                                                                                             "name": "\u5b89\u987a",
                                                                                             "value": 7,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#48CAE4"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u7d2b\u4e91",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u5173\u5cad",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#a5446f"
+                                                                                                        "color": "#AEEAF4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u767e\u7075",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#a5446f"
+                                                                                                        "color": "#CAF1F8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -889,28 +944,37 @@
                                                                                             "name": "\u90fd\u5300",
                                                                                             "value": 7,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#91E0EF"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u4e09\u90fd",
                                                                                                     "value": 3,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#AEEAF4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u8d35\u5b9a",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#a5446f"
+                                                                                                        "color": "#CAF1F8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u60e0\u6c34",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#a5446f"
+                                                                                                        "color": "#E2F2FF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -919,14 +983,17 @@
                                                                                             "name": "\u516d\u76d8\u6c34",
                                                                                             "value": 5,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#AEEAF4"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u516d\u679d",
                                                                                                     "value": 3,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#CAF1F8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -935,7 +1002,7 @@
                                                                                             "name": "\u9075\u4e49",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#CAF1F8"
                                                                                             }
                                                                                         }
                                                                                     ]
@@ -944,27 +1011,33 @@
                                                                                     "name": "\u4e91\u5357",
                                                                                     "value": 7,
                                                                                     "itemStyle": {
-                                                                                        "color": "#c94930"
+                                                                                        "color": "#7C53B1"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u8499\u81ea",
                                                                                             "itemStyle": {
-                                                                                                "color": "#caa465"
+                                                                                                "color": "#7D66BE"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u7ea2\u6cb3\u5dde",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b9a449"
+                                                                                                        "color": "#8478CA"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u91d1\u5e73",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#899893"
+                                                                                                        "color": "#908ED5"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -973,20 +1046,23 @@
                                                                                             "name": "\u4fdd\u5c71",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#dfbd7e"
+                                                                                                "color": "#908ED5"
                                                                                             }
                                                                                         },
                                                                                         {
                                                                                             "name": "\u6606\u660e",
                                                                                             "itemStyle": {
-                                                                                                "color": "#be8663"
+                                                                                                "color": "#A6AEE5"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u5bfb\u7538",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b9a449"
+                                                                                                        "color": "#A6AEE5"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -995,14 +1071,14 @@
                                                                                             "name": "\u662d\u901a",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#ddaf61"
+                                                                                                "color": "#BFCEEF"
                                                                                             }
                                                                                         },
                                                                                         {
                                                                                             "name": "\u4e0d\u8be6",
                                                                                             "value": 2,
                                                                                             "itemStyle": {
-                                                                                                "color": "#ddad20"
+                                                                                                "color": "#8478CA"
                                                                                             }
                                                                                         }
                                                                                     ]
@@ -1010,14 +1086,14 @@
                                                                                 {
                                                                                     "name": "\u6e56\u5357",
                                                                                     "itemStyle": {
-                                                                                        "color": "#e65832"
+                                                                                        "color": "#C886D1"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u6e58\u897f",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#d45a59"
+                                                                                                "color": "#E8B0DD"
                                                                                             }
                                                                                         }
                                                                                     ]
@@ -1109,15 +1185,13 @@
                                                                         "padding": 5
                                                                     },
                                                                 };
-                                                                chart_cb8ca9feaf554d23a403da0cab89c68e.setOption(option_cb8ca9feaf554d23a403da0cab89c68e);
+                                                                chart_651c3612e2dd44cfa6fc40482f42af4d.setOption(option_651c3612e2dd44cfa6fc40482f42af4d);
                                                             </script>
-                                                            <div id="3132f7dfaf194e7cb45b6116dca039b4"
-                                                                class="chart-container"
-                                                                style="width: 1000px;height: 630px;"></div>
+                                                            <div id="d695e51014e2425f9ea9660e29bdd3a9" class="chart-container" style="width: 1000px;height: 630px;"></div>
                                                             <script>
-                                                                var chart_3132f7dfaf194e7cb45b6116dca039b4 = echarts.init(
-                                                                    document.getElementById('3132f7dfaf194e7cb45b6116dca039b4'), 'white', { renderer: 'canvas' });
-                                                                var option_3132f7dfaf194e7cb45b6116dca039b4 = {
+                                                                var chart_d695e51014e2425f9ea9660e29bdd3a9 = echarts.init(
+                                                                    document.getElementById('d695e51014e2425f9ea9660e29bdd3a9'), 'white', { renderer: 'canvas' });
+                                                                var option_d695e51014e2425f9ea9660e29bdd3a9 = {
                                                                     "animation": true,
                                                                     "animationThreshold": 2000,
                                                                     "animationDuration": 1000,
@@ -1159,21 +1233,24 @@
                                                                                 {
                                                                                     "name": "\u5e7f\u897f",
                                                                                     "itemStyle": {
-                                                                                        "color": "#da0d68"
+                                                                                        "color": "#3B7E55"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u67f3\u5dde",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#e0719c"
+                                                                                                "color": "#73C088"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u4e09\u6c5f",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#f99e1c"
+                                                                                                        "color": "#A8E1B8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1182,7 +1259,7 @@
                                                                                             "name": "\u4e0d\u8be6",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#e0719c"
+                                                                                                "color": "#A8E1B8"
                                                                                             }
                                                                                         }
                                                                                     ]
@@ -1191,70 +1268,94 @@
                                                                                     "name": "\u8d35\u5dde",
                                                                                     "value": 101,
                                                                                     "itemStyle": {
-                                                                                        "color": "#da1d23"
+                                                                                        "color": "#033E8A"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u51ef\u91cc",
                                                                                             "value": 63,
                                                                                             "itemStyle": {
-                                                                                                "color": "#dd4c51"
+                                                                                                "color": "#0C48A0"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u53f0\u6c5f",
                                                                                                     "value": 7,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#3e0317"
+                                                                                                        "color": "#0077B9"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u4e39\u5be8",
                                                                                                     "value": 7,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#e62969"
+                                                                                                        "color": "#0096C8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u9ec4\u5e73",
                                                                                                     "value": 5,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#6569b0"
+                                                                                                        "color": "#01B3D7"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u96f7\u5c71",
                                                                                                     "value": 4,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u9ece\u5e73",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u6995\u6c5f",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#AEEAF4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u9ebb\u6c5f",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#CAF1F8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u51ef\u68e0",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#E2F2FF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1263,21 +1364,27 @@
                                                                                             "name": "\u6bd5\u8282",
                                                                                             "value": 22,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#0077B9"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u7ec7\u91d1",
                                                                                                     "value": 6,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#0096C8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u7eb3\u96cd",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#a5446f"
+                                                                                                        "color": "#01B3D7"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1286,21 +1393,27 @@
                                                                                             "name": "\u90fd\u5300",
                                                                                             "value": 5,
                                                                                             "itemStyle": {
-                                                                                                "color": "#dd4c51"
+                                                                                                "color": "#0096C8"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u8d35\u5b9a",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#f2684b"
+                                                                                                        "color": "#01B3D7"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u798f\u6cc9",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#e73451"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1309,21 +1422,24 @@
                                                                                             "name": "\u5b89\u987a",
                                                                                             "value": 3,
                                                                                             "itemStyle": {
-                                                                                                "color": "#f7a128"
+                                                                                                "color": "#01B3D7"
                                                                                             }
                                                                                         },
                                                                                         {
                                                                                             "name": "\u94dc\u4ec1",
                                                                                             "value": 3,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#48CAE4"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u677e\u6843",
                                                                                                     "value": 3,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1332,21 +1448,27 @@
                                                                                             "name": "\u8d35\u9633",
                                                                                             "value": 3,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#91E0EF"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u5f00\u9633",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#AEEAF4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u82b1\u6eaa",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#a5446f"
+                                                                                                        "color": "#CAF1F8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1355,21 +1477,27 @@
                                                                                             "name": "\u5174\u4e49",
                                                                                             "value": 2,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#AEEAF4"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u5b89\u9f99",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#CAF1F8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u671b\u8c1f",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#E2F2FF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1380,15 +1508,18 @@
                                                                                     "name": "\u4e91\u5357",
                                                                                     "value": 1,
                                                                                     "itemStyle": {
-                                                                                        "color": "#c94930"
+                                                                                        "color": "#7D66BE"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u6587\u5c71",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#b53b54"
-                                                                                            }
+                                                                                                "color": "#8478CA"
+                                                                                            },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
+                                                                                                    }
                                                                                         }
                                                                                     ]
                                                                                 },
@@ -1396,22 +1527,28 @@
                                                                                     "name": "\u6e56\u5357",
                                                                                     "value": 7,
                                                                                     "itemStyle": {
-                                                                                        "color": "#e65832"
+                                                                                        "color": "#C886D1"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u6e58\u897f",
                                                                                             "value": 6,
                                                                                             "itemStyle": {
-                                                                                                "color": "#d45a59"
-                                                                                            }
+                                                                                                "color": "#E8B0DD"
+                                                                                            },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
+                                                                                                    }
                                                                                         },
                                                                                         {
                                                                                             "name": "\u4e0d\u8be6",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#d45a59"
-                                                                                            }
+                                                                                                "color": "#F1D0E1"
+                                                                                            },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
+                                                                                                    }
                                                                                         }
                                                                                     ]
                                                                                 }
@@ -1501,17 +1638,14 @@
                                                                         "borderWidth": 0,
                                                                         "padding": 5
                                                                     },
-
                                                                 };
-                                                                chart_3132f7dfaf194e7cb45b6116dca039b4.setOption(option_3132f7dfaf194e7cb45b6116dca039b4);
+                                                                chart_d695e51014e2425f9ea9660e29bdd3a9.setOption(option_d695e51014e2425f9ea9660e29bdd3a9);
                                                             </script>
-                                                            <div id="6eacfb0beb5e4306a8237ce40cfdc119"
-                                                                class="chart-container"
-                                                                style="width: 1000px;height: 630px;"></div>
+                                                            <div id="edfe815b641845b9b6d78a9464581751" class="chart-container" style="width: 1000px;height: 630px;"></div>
                                                             <script>
-                                                                var chart_6eacfb0beb5e4306a8237ce40cfdc119 = echarts.init(
-                                                                    document.getElementById('6eacfb0beb5e4306a8237ce40cfdc119'), 'white', { renderer: 'canvas' });
-                                                                var option_6eacfb0beb5e4306a8237ce40cfdc119 = {
+                                                                var chart_edfe815b641845b9b6d78a9464581751 = echarts.init(
+                                                                    document.getElementById('edfe815b641845b9b6d78a9464581751'), 'white', { renderer: 'canvas' });
+                                                                var option_edfe815b641845b9b6d78a9464581751 = {
                                                                     "animation": true,
                                                                     "animationThreshold": 2000,
                                                                     "animationDuration": 1000,
@@ -1554,15 +1688,18 @@
                                                                                     "name": "\u5e7f\u897f",
                                                                                     "value": 1,
                                                                                     "itemStyle": {
-                                                                                        "color": "#da0d68"
+                                                                                        "color": "#3B7E55"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u4e0d\u8be6",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#e0719c"
-                                                                                            }
+                                                                                                "color": "#73C088"
+                                                                                            },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
+                                                                                                    }
                                                                                         }
                                                                                     ]
                                                                                 },
@@ -1570,84 +1707,114 @@
                                                                                     "name": "\u8d35\u5dde",
                                                                                     "value": 73,
                                                                                     "itemStyle": {
-                                                                                        "color": "#da1d23"
+                                                                                        "color": "#033E8A"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u51ef\u91cc",
                                                                                             "value": 43,
                                                                                             "itemStyle": {
-                                                                                                "color": "#dd4c51"
+                                                                                                "color": "#0C48A0"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u53f0\u6c5f",
                                                                                                     "value": 10,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#3e0317"
+                                                                                                        "color": "#0077B9"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u6995\u6c5f",
                                                                                                     "value": 7,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#e62969"
+                                                                                                        "color": "#0096C8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u96f7\u5c71",
                                                                                                     "value": 5,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#6569b0"
+                                                                                                        "color": "#01B3D7"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u4e39\u5be8",
                                                                                                     "value": 4,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u9ec4\u5e73",
                                                                                                     "value": 4,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u9ebb\u6c5f",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#AEEAF4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u9ece\u5e73",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#CAF1F8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u4e09\u7a57",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#E2F2FF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u5251\u6cb3",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#E2F2FF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u53f0\u62f1",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#ef2d36"
+                                                                                                        "color": "#E2F2FF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1656,28 +1823,37 @@
                                                                                             "name": "\u6bd5\u8282",
                                                                                             "value": 12,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#0077B9"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u7ec7\u91d1",
                                                                                                     "value": 4,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#0096C8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u7eb3\u96cd",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#a5446f"
+                                                                                                        "color": "#01B3D7"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u6797\u6cc9",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#aeb92c"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1686,28 +1862,37 @@
                                                                                             "name": "\u8d35\u9633",
                                                                                             "value": 5,
                                                                                             "itemStyle": {
-                                                                                                "color": "#dd4c51"
+                                                                                                "color": "#0096C8"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u82b1\u6eaa",
                                                                                                     "value": 3,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#f2684b"
+                                                                                                        "color": "#01B3D7"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u5f00\u9633",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#e73451"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u4e4c\u5f53",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#e73451"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1716,28 +1901,37 @@
                                                                                             "name": "\u90fd\u5300",
                                                                                             "value": 4,
                                                                                             "itemStyle": {
-                                                                                                "color": "#f7a128"
+                                                                                                "color": "#01B3D7"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u60e0\u6c34",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#e2631e"
+                                                                                                        "color": "#48CAE4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u8d35\u5b9a",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#fde404"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u5e73\u5858",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#fde404"
+                                                                                                        "color": "#AEEAF4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1746,14 +1940,17 @@
                                                                                             "name": "\u5174\u4e49",
                                                                                             "value": 3,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#48CAE4"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u8d1e\u4e30",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#91E0EF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1762,14 +1959,17 @@
                                                                                             "name": "\u94dc\u4ec1",
                                                                                             "value": 2,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#91E0EF"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u677e\u6843",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#AEEAF4"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1778,14 +1978,17 @@
                                                                                             "name": "\u516d\u76d8\u6c34",
                                                                                             "value": 2,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
+                                                                                                "color": "#AEEAF4"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u516d\u679d",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b53b54"
+                                                                                                        "color": "#CAF1F8"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1794,15 +1997,21 @@
                                                                                             "name": "\u5b89\u987a",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
-                                                                                            }
+                                                                                                "color": "#CAF1F8"
+                                                                                            },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
+                                                                                                    }
                                                                                         },
                                                                                         {
                                                                                             "name": "\u4e0d\u8be6",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#c94a44"
-                                                                                            }
+                                                                                                "color": "#E2F2FF"
+                                                                                            },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
+                                                                                                    }
                                                                                         }
                                                                                     ]
                                                                                 },
@@ -1810,20 +2019,23 @@
                                                                                     "name": "\u4e91\u5357",
                                                                                     "value": 13,
                                                                                     "itemStyle": {
-                                                                                        "color": "#c94930"
+                                                                                        "color": "#7C53B1"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u6606\u660e",
                                                                                             "itemStyle": {
-                                                                                                "color": "#caa465"
+                                                                                                "color": "#7D66BE"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u5bfb\u7538",
                                                                                                     "value": 7,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b9a449"
+                                                                                                        "color": "#8478CA"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1831,21 +2043,27 @@
                                                                                         {
                                                                                             "name": "\u8499\u81ea",
                                                                                             "itemStyle": {
-                                                                                                "color": "#dfbd7e"
+                                                                                                "color": "#908ED5"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u7ea2\u6cb3\u5dde",
                                                                                                     "value": 3,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b9a449"
+                                                                                                        "color": "#A6AEE5"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u91d1\u5e73",
                                                                                                     "value": 2,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b9a449"
+                                                                                                        "color": "#BFCEEF"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1854,7 +2072,7 @@
                                                                                             "name": "\u897f\u53cc\u7248\u7eb3",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#ddad20"
+                                                                                                "color": "#BFCEEF"
                                                                                             }
                                                                                         }
                                                                                     ]
@@ -1863,28 +2081,34 @@
                                                                                     "name": "\u6e56\u5357",
                                                                                     "value": 8,
                                                                                     "itemStyle": {
-                                                                                        "color": "#e65832"
+                                                                                        "color": "#C886D1"
                                                                                     },
                                                                                     "children": [
                                                                                         {
                                                                                             "name": "\u6e58\u897f",
                                                                                             "value": 7,
                                                                                             "itemStyle": {
-                                                                                                "color": "#d45a59"
+                                                                                                "color": "#E8B0DD"
                                                                                             },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "name": "\u901a\u9053",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b9a449"
+                                                                                                        "color": "#FDC8DB"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 },
                                                                                                 {
                                                                                                     "name": "\u82b1\u57a3",
                                                                                                     "value": 1,
                                                                                                     "itemStyle": {
-                                                                                                        "color": "#b9a449"
+                                                                                                        "color": "#F1D0E1"
+                                                                                                    },
+                                                                                                    "label": {
+                                                                                                        "color": "#FFFFFF"
                                                                                                     }
                                                                                                 }
                                                                                             ]
@@ -1893,7 +2117,7 @@
                                                                                             "name": "\u4e0d\u8be6",
                                                                                             "value": 1,
                                                                                             "itemStyle": {
-                                                                                                "color": "#d45a59"
+                                                                                                "color": "#F1D0E1"
                                                                                             }
                                                                                         }
                                                                                     ]
@@ -1985,10 +2209,10 @@
                                                                         "padding": 5
                                                                     },
                                                                 };
-                                                                chart_6eacfb0beb5e4306a8237ce40cfdc119.setOption(option_6eacfb0beb5e4306a8237ce40cfdc119);
+                                                                chart_edfe815b641845b9b6d78a9464581751.setOption(option_edfe815b641845b9b6d78a9464581751);
                                                             </script>
                                                         </div>
-
+                                                    
                                                         <script>
                                                         </script>
                                                         <script>
@@ -1998,18 +2222,18 @@
                                                                     containers[0].style.display = "block";
                                                                 }
                                                             })()
-
+                                                    
                                                             function showChart(evt, chartID) {
                                                                 let containers = document.getElementsByClassName("chart-container");
                                                                 for (let i = 0; i < containers.length; i++) {
                                                                     containers[i].style.display = "none";
                                                                 }
-
+                                                    
                                                                 let tablinks = document.getElementsByClassName("tablinks");
                                                                 for (let i = 0; i < tablinks.length; i++) {
                                                                     tablinks[i].className = "tablinks";
                                                                 }
-
+                                                    
                                                                 document.getElementById(chartID).style.display = "block";
                                                                 evt.currentTarget.className += " active";
                                                             }
@@ -2017,10 +2241,18 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="intro" style="margin-top: 10rem;">
-                                                        <text style="font-family: 楷体;font-size: 2rem;">
-                                                            先民穴居山洞，兽奔山林，鱼游河塘，蜂蝶舞花，四季鲜花，硕果垂枝，都是苗族人民创作想象的广阔天地。自然万物主题的纹样体现了苗族女性对大自然的感知和内心的情愫，表达了她们对美好生活的愿景。源于自然，融于自然。再现了大自然丰厚浓郁、清新亮丽的底蕴和千姿百态，呈现了自然界的心源力度美、层次立体美、和谐韵律美。
-                                                        </text>
+                                                    <h3 style="font-family:Monospace;margin-top:1.5rem;margin-left: 2rem;text-align: center;">
+                                                        Texture & Territory
+                                                    </h2>
+                                                    <div class="intro" style="margin-top: 2rem;margin-left: 3rem;">
+                                                        <text style="font-family: 楷体;font-size: 1.4958rem;text-align: center;">不同地区的纹理主题存在倾向差异，这体现了苗族服饰纹样与地域的强关联性，以及地区环境对于苗族人民创作内容的影响</text>
+                                                    </div>
+                                                    <div>
+                                                        <img style="width: 70px;margin-left: 6.5rem;margin-top: 3rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Rectangle%2025.png">
+                                                        <img style="width: 70px;margin-left: 1.5rem;margin-top: 1rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Rectangle%2021.png">
+                                                        <img style="width: 70px;margin-left: 1.5rem;margin-top: 9rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Rectangle%2022.png">
+                                                        <img style="width: 70px;margin-left: 1.5rem;margin-top: 3rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Rectangle%2023.png">
+                                                        <img style="width: 70px;margin-left: 1.5rem;margin-top: 10.3rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Rectangle%2024.png">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2120,7 +2352,7 @@
             <div data-anchor="page6" class="pp-scrollable text-white section section-1">
                 <div class="scroll-wrap">
                     <div class="section-bg"
-                        style="background-image:url(https://raw.githubusercontent.com/Eternal-June/image/main/xuri.png)">
+                        style="background-image:url(https://raw.githubusercontent.com/Eternal-June/image/main/c5.png)">
                     </div>
 
                     <div class="scrollable-content">
@@ -2170,7 +2402,7 @@
                                         "series": [
                                             {
                                                 "type": "sankey",
-                                                "name": "\u82d7\u65cf\u670d\u9970\u7eb9\u7406\u5206\u6790",
+                                                "name": "",
                                                 "data": [
                                                     {
                                                         "name": "\u82d7\u65cf\u670d\u9970\u7eb9\u6837"
@@ -2442,10 +2674,10 @@
                                         "legend": [
                                             {
                                                 "data": [
-                                                    "\u82d7\u65cf\u670d\u9970\u7eb9\u7406\u5206\u6790"
+                                                    ""
                                                 ],
                                                 "selected": {
-                                                    "\u82d7\u65cf\u670d\u9970\u7eb9\u7406\u5206\u6790": true
+                                                    "": true
                                                 }
                                             }
                                         ],
