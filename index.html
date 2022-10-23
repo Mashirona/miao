@@ -2242,14 +2242,15 @@
                                                         <div class="video-content">
                                                             <video style="width:100%;height:auto;"
                                                                 poster="https://raw.githubusercontent.com/Eternal-June/image/main/image%20116.png"
+                                                                title="视频来源：B站视频(bilibili.com)"
                                                                 controls="controls">
 
-                                                                <source
+                                                                <source 
                                                                     src="https://raw.githubusercontent.com/Eternal-June/image/main/video1.mp4"
                                                                     type="video/mp4">
                                                                 <div id="poster">
                                                                     <div class="mask"></div>
-                                                                    <div class="video-img" @click="onPlay"><img
+                                                                    <div class="video-img" @click="onPlay"><img title="dsa"
                                                                             src="https://raw.githubusercontent.com/Eternal-June/image/main/image%20119%20(1).png" />
                                                                     </div>
                                                                 </div>
@@ -2266,6 +2267,7 @@
                                                 <div class="col-specialization col-4">
                                                     <span>
                                                         <video style="width:100%;height:auto;"
+                                                        title="视频来源：youtubu.com"
                                                             poster="https://raw.githubusercontent.com/Eternal-June/image/main/01026h01kfzy8n3rre6010nemqq09gpl96%201.png"
                                                             controls="controls">
                                                             <source
@@ -2281,6 +2283,7 @@
                                                 <div class=" col-specialization col-4" >
                                                         <span>
                                                             <video style="width:100%;height:auto;"
+                                                            title="视频来源：youtubu.com"
                                                                 poster="https://raw.githubusercontent.com/Eternal-June/image/main/F9EDD2BE14DBC980502BE4F094270248%201.png"
                                                                 controls="controls">
                                                                 <source
@@ -2702,20 +2705,11 @@
                                             }
 
                                             img:hover {
-                                                transform: scale(1.1);
+                                                transform: scale(1.35);
                                             }
 
-                                            #img10 {
-                                                width: 100%;
-                                            }
 
-                                            #img9 {
-                                                width: 100%;
-                                            }
 
-                                            #img8 {
-                                                width: 100%;
-                                            }
                                         </style>
                                         <!-- 外层最大的盒子 -->
                                         <div class="roofBox">
@@ -2730,31 +2724,225 @@
                                             <ul class="contantBox">
 
                                                 <li>
+                                                    <style>
+                                                        
+                                                            *{
+                                                                margin:0px;
+                                                                padding:0px;
+                                                            }
+                                                    
+                                                            /* 弹窗的位置和背景颜色 */
+                                                            .modal {
+                                                                display: none; 
+                                                                position: fixed; /* 绝对定位 */
+                                                                z-index: 10; /* 元素置前 */
+                                                                /* padding-top: 50px; */
+                                                                /* width: 100%; 
+                                                                height: 100%;  */
+                                                                overflow: auto; /* 溢出出现滚动条 */
+                                                            }
+                                                    
+                                                            /* 弹窗图片的大小 */
+                                                            .content {
+                                                                margin: auto;
+                                                                display: block;
+                                                                /* min-height:500px;
+                                                                max-height:600px; */
+                                                            }
+                                                    </style>
                                                     <h4
                                                         style="font-size: 1.2rem;font-family: 楷体;line-height: 2.5rem;">
                                                         先民穴居山洞，兽奔山林，鱼游河塘，蜂蝶舞花，四季鲜花，硕果垂枝，都是苗族人民创作想象的广阔天地。自然万物主题的纹样体现了苗族女性对大自然的感知和内心的情愫，表达了她们对美好生活的愿景。源于自然，融于自然。再现了大自然丰厚浓郁、清新亮丽的底蕴和千姿百态，呈现了自然界的心源力度美、层次立体美、和谐韵律美。
                                                     </h4>
-                                                    <img id="img10"
-                                                        src="https://raw.githubusercontent.com/Eternal-June/image/main/texture_1.png">
+                                                    <div>
+                                                        <img onclick="demo('z1', 'zr1')" id="z1" style="width: 8%;margin-right: 6.5rem;margin-left: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2041.png">
+                                                        <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                                                            <img class="content" id="zr1">
+                                                        </div>
+                                                        <img onclick="demo('z2', 'zr1')" id="z2"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2042.png">
+                                                        <img onclick="demo('z3', 'zr1')" id="z3"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2043.png">
+                                                        <img onclick="demo('z4', 'zr1')" id="z4"  style="width: 8%;margin-right: 6rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2040.png">
+                                                        <img onclick="demo('z5', 'zr1')" id="z5"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2030.png">
+                                                        <img onclick="demo('z6', 'zr1')" id="z6"  style="width: 8%;margin-right: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2031.png">
+                                                    </div>
+                                                    <div style="margin-top: 2rem;">
+                                                        <img onclick="demo('z7', 'zr1')" id="z7" style="width: 8%;margin-right: 6.5rem;margin-left: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2033.png">
+                                                        <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                                                            <img class="content" id="zr1">
+                                                        </div>
+                                                        <img onclick="demo('z8', 'zr1')" id="z8"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2034.png">
+                                                        <img onclick="demo('z9', 'zr1')" id="z9"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2035.png">
+                                                        <img onclick="demo('z10', 'zr1')" id="z10"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2036.png">
+                                                        <img onclick="demo('z11', 'zr1')" id="z11"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2037.png">
+                                                        <img onclick="demo('z12', 'zr1')" id="z12"  style="width: 8%;margin-right: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2021.png">
+                                                    </div>
+                                                    <div style="margin-top: 2rem;">
+                                                        <img onclick="demo('z18', 'zr1')" id="z18" style="width: 8%;margin-right: 6.5rem;margin-left: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2023.png">
+                                                        <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+                                                            <img class="content" id="zr1">
+                                                        </div>
+                                                        <img onclick="demo('z13', 'zr1')" id="z13"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2024.png">
+                                                        <img onclick="demo('z14', 'zr1')" id="z14"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2025.png">
+                                                        <img onclick="demo('z15', 'zr1')" id="z15"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2027.png">
+                                                        <img onclick="demo('z16', 'zr1')" id="z16"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2028.png">
+                                                        <img onclick="demo('z17', 'zr1')" id="z17"  style="width: 8%;margin-right: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/Ellipse%2029.png">
+                                                    </div>
+                                                    <script>
+                                                        function demo(imgId, cId) {
+                                                            document.getElementById('myModal').style.display = "block";
+                                                            document.getElementById(cId).src = document.getElementById(imgId).src;
+                                                        }
+                                                    </script>
+                                                    
                                                 </li>
                                                 <li>
+                                                    <style>
+                                                        
+                                                        *{
+                                                            margin:0px;
+                                                            padding:0px;
+                                                        }
+                                                
+                                                        /* 弹窗的位置和背景颜色 */
+                                                        .modal {
+                                                            display: none; 
+                                                            position: fixed; /* 绝对定位 */
+                                                            z-index: 10; /* 元素置前 */
+                                                            /* padding-top: 50px; */
+                                                            /* width: 100%; 
+                                                            height: 100%;  */
+                                                            overflow: auto; /* 溢出出现滚动条 */
+                                                        }
+                                                
+                                                        /* 弹窗图片的大小 */
+                                                        .content {
+                                                            margin: auto;
+                                                            display: block;
+                                                            /* min-height:500px;
+                                                            max-height:600px; */
+                                                        }
+                                                </style>
                                                     <h4
                                                         style="font-size: 1.2rem;font-family: 楷体;line-height: 2.5rem;">
                                                         宇宙法则是宇宙精神的绝对性、普遍性和主观性与宇宙物质的相对性、特殊性和客观性合而为一的产物。在持续的生产生活中，苗族先民不断与日月星辰、自然山水相接触，他们将对宇宙星辰的观察与理解记录在服饰上，通过抽象几何的元素概括宇宙法则，以简单凝练的图案展示这个古老神秘的民族对于遥远时空与未知宇宙的超凡想象，具有超越实物的意象色彩。
                                                     </h4>
-                                                    <img id="img9"
-                                                        src="https://raw.githubusercontent.com/Eternal-June/image/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221016212239.jpg">
+                                                    <div>
+                                                        <img onclick="demo1('s1', 'yr1')" id="s1" style="width: 8%;margin-right: 6.5rem;margin-left: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(7).png">
+                                                        <div id="myModal1" class="modal" onclick="document.getElementById('myModal1').style.display='none'">
+                                                            <img class="content" id="yr1">
+                                                        </div>
+                                                        <img onclick="demo1('s2', 'yr1')" id="s2"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(6).png">
+                                                        <img onclick="demo1('s3', 'yr1')" id="s3"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(5).png">
+                                                        <img onclick="demo1('s4', 'yr1')" id="s4"  style="width: 8%;margin-right: 6rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(4).png">
+                                                        <img onclick="demo1('s5', 'yr1')" id="s5"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(3).png">
+                                                        <img onclick="demo1('s6', 'yr1')" id="s6"  style="width: 8%;margin-right: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(2).png">
+                                                    </div>
+                                                    <div style="margin-top: 2rem;">
+                                                        <img onclick="demo1('s7', 'yr1')" id="s7" style="width: 8%;margin-right: 6.5rem;margin-left: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(1).png">
+                                                        <div id="myModal1" class="modal" onclick="document.getElementById('myModal1').style.display='none'">
+                                                            <img class="content" id="yr1">
+                                                        </div>
+                                                        <img onclick="demo1('s8', 'yr1')" id="s8"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(8).png">
+                                                        <img onclick="demo1('s9', 'yr1')" id="s9"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(9).png">
+                                                        <img onclick="demo1('s10', 'yr1')" id="s10"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(10).png">
+                                                        <img onclick="demo1('s11', 'yr1')" id="s11"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(11).png">
+                                                        <img onclick="demo1('s12', 'yr1')" id="s12"  style="width: 8%;margin-right: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(12).png">
+                                                    </div>
+                                                    <div style="margin-top: 2rem;">
+                                                        <img onclick="demo1('s18', 'yr1')" id="s18" style="width: 8%;margin-right: 6.5rem;margin-left: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(13).png">
+                                                        <div id="myModal1" class="modal" onclick="document.getElementById('myModal1').style.display='none'">
+                                                            <img class="content" id="yr1">
+                                                        </div>
+                                                        <img onclick="demo1('s13', 'yr1')" id="s13"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(14).png">
+                                                        <img onclick="demo1('s14', 'yr1')" id="z14"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(15).png">
+                                                        <img onclick="demo1('s15', 'yr1')" id="z15"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(16).png">
+                                                        <img onclick="demo1('s16', 'yr1')" id="z16"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(17).png">
+                                                        <img onclick="demo1('s17', 'yr1')" id="z17"  style="width: 8%;margin-right: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/1_%20(18).png">
+                                                    </div>
+                                                    <script>
+                                                        function demo1(imgId, cId) {
+                                                            document.getElementById('myModal1').style.display = "block";
+                                                            document.getElementById(cId).src = document.getElementById(imgId).src;
+                                                        }
+                                                    </script>
                                                 </li>
                                                 <li>
+                                                    <style>
+                                                        
+                                                        *{
+                                                            margin:0px;
+                                                            padding:0px;
+                                                        }
+                                                
+                                                        /* 弹窗的位置和背景颜色 */
+                                                        .modal {
+                                                            display: none; 
+                                                            position: fixed; /* 绝对定位 */
+                                                            z-index: 10; /* 元素置前 */
+                                                            /* padding-top: 50px; */
+                                                            /* width: 100%; 
+                                                            height: 100%;  */
+                                                            overflow: auto; /* 溢出出现滚动条 */
+                                                        }
+                                                
+                                                        /* 弹窗图片的大小 */
+                                                        .content {
+                                                            margin: auto;
+                                                            display: block;
+                                                            /* min-height:500px;
+                                                            max-height:600px; */
+                                                        }
+                                                </style>
                                                     <h4
                                                         style="font-size: 1.2rem;font-family: 楷体;line-height: 2.5rem;">
                                                         苗族人民热爱生活，崇尚生命，富于创造性。生老病死、花开叶落都启发着他们对于生命本源的思考，经过对事物的观察、理解、加工、创造，并融入自主的审美喜好，呈现出独具特色的苗族纹样，其中蕴含的文化内涵和丰富的文化记忆在时间长河中轮回旋转，不断展现着这个民族蓬勃的生命力。
                                                     </h4>
-                                                    <img id="img8"
-                                                        src="https://raw.githubusercontent.com/Eternal-June/image/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221016212247.png">
+                                                    <div>
+                                                        <img onclick="demo2('z1a', 'zr1a')" id="z1a" style="width: 8%;margin-right: 6.5rem;margin-left: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(18).png">
+                                                        <div id="myModal3" class="modal" onclick="document.getElementById('myModal3').style.display='none'">
+                                                            <img class="content" id="zr1a">
+                                                        </div>
+                                                        <img onclick="demo2('z2a', 'zr1')" id="z2a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(1).png">
+                                                        <img onclick="demo2('z3a', 'zr1')" id="z3a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(2).png">
+                                                        <img onclick="demo2('z4a', 'zr1')" id="z4a"  style="width: 8%;margin-right: 6rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(3).png">
+                                                        <img onclick="demo2('z5a', 'zr1')" id="z5a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(4).png">
+                                                        <img onclick="demo2('z6a', 'zr1')" id="z6a"  style="width: 8%;margin-right: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(5).png">
+                                                    </div>
+                                                    <div style="margin-top: 2rem;">
+                                                        <img onclick="demo2('z7a', 'zr1a')" id="z7a" style="width: 8%;margin-right: 6.5rem;margin-left: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(6).png">
+                                                        <div id="myModal3" class="modal" onclick="document.getElementById('myModal3').style.display='none'">
+                                                            <img class="content" id="zr1a">
+                                                        </div>
+                                                        <img onclick="demo2('z8a', 'zr1a')" id="z8a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(7).png">
+                                                        <img onclick="demo2('z9a', 'zr1a')" id="z9a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(8).png">
+                                                        <img onclick="demo2('z10a', 'zr1a')" id="z10a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(9).png">
+                                                        <img onclick="demo2('z11a', 'zr1a')" id="z11a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(10).png">
+                                                        <img onclick="demo2('z12a', 'zr1a')" id="z12a"  style="width: 8%;margin-right: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(11).png">
+                                                    </div>
+                                                    <div style="margin-top: 2rem;">
+                                                        <img onclick="demo2('z18a', 'zr1a')" id="z18a" style="width: 8%;margin-right: 6.5rem;margin-left: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(12).png">
+                                                        <div id="myModal3" class="modal" onclick="document.getElementById('myModal3').style.display='none'">
+                                                            <img class="content" id="zr1">
+                                                        </div>
+                                                        <img onclick="demo2('z13a', 'zr1a')" id="z13a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(13).png">
+                                                        <img onclick="demo2('z14a', 'zr1a')" id="z14a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(14).png">
+                                                        <img onclick="demo2('z15a', 'zr1a')" id="z15a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(15).png">
+                                                        <img onclick="demo2('z16a', 'zr1a')" id="z16a"  style="width: 8%;margin-right: 6.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(16).png">
+                                                        <img onclick="demo2('z17a', 'zr1a')" id="z17a"  style="width: 8%;margin-right: 0.5rem;" src="https://raw.githubusercontent.com/Eternal-June/image/main/2%20(17).png">
+                                                    </div>
+                                                    <script>
+                                                        function demo2(imgId, cId) {
+                                                            document.getElementById('myModal3').style.display = "block";
+                                                            document.getElementById(cId).src = document.getElementById(imgId).src;
+                                                        }
+                                                    </script>
 
                                                 </li>
+                                              
                                             </ul>
+                                            <script>
+                                                
+                                            </script>
                                         </div>
                                         <!-- 引入js库 -->
                                         <script
